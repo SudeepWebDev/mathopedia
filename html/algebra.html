@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertrix - Mathematics</title>
+    <link rel="stylesheet" href="/mathopedia/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>\
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- logo, navigation menu, and introductory content-->
+        <!-- <span></span> -->
+        <div id="menu_bar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="logo">Convertrix</div>
+        <div class="search-box" style="display: none;">
+
+        </div>
+        <div class="header-actions">
+            <div class="setting"><i class="fas fa-cog "></i></div>
+            <div class="notification-icon"><i class="fas fa-bell "></i></div>
+        </div>
+
+    </header>
+    <main>
+        <div class="study-tags-search-section">
+            <div class="study-text">
+                <h1>What will you study today?</h1>
+            </div>
+            <div><input type="text" class="search-bar" placeholder="Search"></div>
+            <div class="tag-icons">
+                <ul class="nav">
+                    <li>
+                        <a href="#foryou">
+                            <i class="fas fa-magic"></i>
+                            <span class="section-name">For You</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#arithmetic">
+                            <i class="fas fa-calculator "></i>
+                            <span class="section-name ">Arithmetic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#algebra">
+                            <i class="fas fa-superscript active-tag-i"></i>
+                            <span class="section-name active-tag-text">Algebra</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#geometry">
+                            <i class="fas fa-draw-polygon"></i>
+                            <span class="section-name">Geometry</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#trigonometry">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span class="section-name">Trigonometry</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#calculus">
+                            <i class="fas fa-infinity"></i>
+                            <span class="section-name">Calculus</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#statistics">
+                            <i class="fas fa-chart-bar"></i>
+                            <span class="section-name">Statistics & Probability</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#linear-algebra">
+                            <i class="fas fa-vector-square"></i>
+                            <span class="section-name">Linear Algebra</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#diff-equations">
+                            <i class="fas fa-angle-double-right"></i>
+                            <span class="section-name">Differential Equations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#number-theory">
+                            <i class="fas fa-superscript"></i>
+                            <span class="section-name">Number Theory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#discrete-math">
+                            <i class="fas fa-th-large"></i>
+                            <span class="section-name">Discrete Mathematics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#logic">
+                            <i class="fas fa-infinity"></i>
+                            <span class="section-name">Mathematical Logic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#real-analysis">
+                            <i class="fas fa-chart-line"></i>
+                            <span class="section-name">Real Analysis</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#complex-analysis">
+                            <i class="fas fa-chart-area"></i>
+                            <span class="section-name">Complex Analysis</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#abstract-algebra">
+                            <i class="fas fa-shapes"></i>
+                            <span class="section-name">Abstract Algebra</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#topology">
+                            <i class="fas fa-project-diagram"></i>
+                            <span class="section-name">Topology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#applied-math">
+                            <i class="fas fa-chart-pie"></i>
+                            <span class="section-name">Applied Mathematics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#engineering-math">
+                            <i class="fas fa-cogs"></i>
+                            <span class="section-name">Engineering Mathematics</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <section class="start-with-section">
+            <h2>Start With</h2>
+            <ul class="start-with-list">
+                <li><a href="/mathopedia/algebra.html?topic=variables-and-constants"><i class="fas fa-sort-alpha-down"></i>
+                        Variables and Constants</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=expressions-and-equations"><i class="fas fa-equals"></i> Expressions and
+                        Equations</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=solving-equations"><i class="fas fa-equals"></i> Solving Equations</a>
+                </li>
+                <li><a href="/mathopedia/algebra.html?topic=inequalities"><i class="fas fa-not-equal"></i> Inequalities</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=linear-equations"><i class="fas fa-chart-line"></i> Linear Equations</a>
+                </li>
+                <li><a href="/mathopedia/algebra.html?topic=quadratic-equations"><i class="fas fa-superscript"></i> Quadratic
+                        Equations</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=polynomials"><i class="fas fa-times"></i> Polynomials</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=factoring"><i class="fas fa-sitemap"></i> Factoring</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=functions"><i class="fas fa-function"></i> Functions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=graphing-functions"><i class="fas fa-chart-area"></i> Graphing
+                        Functions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=exponents-and-radicals"><i class="fas fa-square-root-alt"></i> Exponents
+                        and Radicals</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=rational-expressions"><i class="fas fa-divide"></i> Rational
+                        Expressions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=complex-numbers"><i class="fas fa-infinity"></i> Complex Numbers</a>
+                </li>
+                <li><a href="/mathopedia/algebra.html?topic=quadratic-functions"><i class="fas fa-chart-line"></i> Quadratic
+                        Functions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=polynomial-functions"><i class="fas fa-chart-bar"></i> Polynomial
+                        Functions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=exponential-functions"><i class="fas fa-chart-line"></i> Exponential
+                        Functions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=logarithmic-functions"><i class="fas fa-chart-line"></i> Logarithmic
+                        Functions</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=systems-of-equations"><i class="fas fa-equals"></i> Systems of
+                        Equations</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=matrices-and-determinants"><i class="fas fa-table"></i> Matrices and
+                        Determinants</a></li>
+                <li><a href="/mathopedia/algebra.html?topic=sequences-and-series"><i class="fas fa-list-ol"></i> Sequences and
+                        Series</a></li>
+            </ul>
+        </section>
+
+        <section class="topic-content">
+            <h2 class="topic-title">Quadratic Equations</h2>
+            <p class="topic-description">
+                Quadratics can be defined as a polynomial equation of a second degree, which implies that it comprises a
+                minimum of one term that is squared. It is also called quadratic equations. The general form of the
+                quadratic equation is:<br>
+                <strong>ax² + bx + c = 0</strong><br>
+                where x is an unknown variable and a, b, and c are numerical coefficients. For example, x² + 2x + 1 is a
+                quadratic equation. Here, 'a' must not be equal to zero; otherwise, the equation becomes linear, such
+                as:<br>
+                <strong>bx + c = 0</strong><br>
+                Thus, this equation cannot be considered a quadratic equation.<br>
+                The terms a, b, and c are also referred to as quadratic coefficients.<br>
+                The solutions to the quadratic equation are the values of the unknown variable x, which satisfy the
+                equation. These solutions are called roots or zeros of quadratic equations. The roots of any polynomial
+                are the solutions to the given equation.
+            </p>
+            <h3 class="topic-subheading">What is Quadratic Equation?</h3>
+            <div class="topic-subheading-description">
+                The polynomial equation whose highest degree is two is called a quadratic equation or sometimes just
+                quadratics. It is expressed in the form of:<br>
+                <strong>ax² + bx + c = 0</strong><br>
+                where x is the unknown variable and a, b, and c are constant terms.
+            </div>
+            <h3 class="topic-subheading">Standard Form of Quadratic Equation</h3>
+            <div class="topic-subheading-description">
+                Since the quadratic equation includes only one unknown term or variable, it is called univariate. The
+                power of variable x is always a non-negative integer. Hence, the equation is a polynomial equation with
+                the highest power of 2.<br>
+                The solutions for this equation are the values of x, also known as zeros. Zeros of the polynomial
+                satisfy the equation. In the case of quadratics, there are two roots or zeros of the equation. When the
+                values of roots or x are placed on the left-hand side of the equation, it equals zero. Therefore, they
+                are called zeros.
+            </div>
+            <h3 class="topic-subheading">Quadratic Formula</h3>
+            <div class="topic-subheading-description">
+                The formula for solving a quadratic equation is used to find the roots of the equation. Since quadratics
+                have a degree equal to two, there are typically two solutions for the equation. For a quadratic equation
+                <strong>ax² + bx + c = 0</strong>, the formula to find the roots is:<br>
+                <strong>
+                    \ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\
+                </strong><br>
+                The ± sign indicates two distinct solutions for x. Learn more about the quadratic formula here.
+            </div>
+            <h3 class="topic-subheading">Examples of Quadratics</h3>
+            <div class="topic-subheading-description">
+                Beneath are the illustrations of quadratic equations of the form <strong>ax² + bx + c = 0</strong>:<br>
+                <ul>
+                    <li>x² – x – 9 = 0</li>
+                    <li>5x² – 2x – 6 = 0</li>
+                    <li>3x² + 4x + 8 = 0</li>
+                    <li>-x² + 6x + 12 = 0</li>
+                </ul>
+                Examples of a quadratic equation with the absence of a 'C' - a constant term:<br>
+                <ul>
+                    <li>-x² – 9x = 0</li>
+                    <li>x² + 2x = 0</li>
+                    <li>-6x² – 3x = 0</li>
+                    <li>-5x² + x = 0</li>
+                    <li>-12x² + 13x = 0</li>
+                    <li>11x² – 27x = 0</li>
+                </ul>
+                Following are the examples of a quadratic equation in factored form:<br>
+                <ul>
+                    <li>(x – 6)(x + 1) = 0 [Result obtained after solving is x² – 5x – 6 = 0]</li>
+                    <li>–3(x – 4)(2x + 3) = 0 [Result obtained after solving is -6x² + 15x + 36 = 0]</li>
+                    <li>(x − 5)(x + 3) = 0 [Result obtained after solving is x² − 2x − 15 = 0]</li>
+                    <li>(x – 5)(x + 2) = 0 [Result obtained after solving is x² – 3x – 10 = 0]</li>
+                    <li>(x – 4)(x + 2) = 0 [Result obtained after solving is x² – 2x – 8 = 0]</li>
+                    <li>(2x + 3)(3x – 2) = 0 [Result obtained after solving is 6x² + 5x – 6]</li>
+                </ul>
+                Below are examples of a quadratic equation with an absence of linear coefficient 'bx':<br>
+                <ul>
+                    <li>2x² – 64 = 0</li>
+                    <li>x² – 16 = 0</li>
+                    <li>9x² + 49 = 0</li>
+                    <li>-2x² – 4 = 0</li>
+                    <li>4x² + 81 = 0</li>
+                    <li>-x² – 9 = 0</li>
+                </ul>
+            </div>
+            <h3 class="topic-subheading">How to Solve Quadratic Equations?</h3>
+            <div class="topic-subheading-description">
+                There are basically four methods of solving quadratic equations. They are:<br>
+                <ul>
+                    <li>Factoring</li>
+                    <li>Completing the square</li>
+                    <li>Using Quadratic Formula</li>
+                    <li>Taking the square root</li>
+                </ul>
+            </div>
+            <h4 class="topic-subheading">Factoring of Quadratics</h4>
+            <div class="topic-subheading-description">
+                To factor a quadratic equation of the form ax² + bx + c = 0:<br>
+                <ol>
+                    <li>Ensure that the equation is set to zero.</li>
+                    <li>Factor the left-hand side of the equation, assuming zero on the right-hand side.</li>
+                    <li>Assign each factor equal to zero.</li>
+                    <li>Solve the equation to determine the values of x.</li>
+                </ol>
+                If the leading coefficient 'a' is not equal to one, a specific method is followed for arranging the
+                factors.
+            </div>
+            <h4 class="topic-subheading">Completing the Square Method</h4>
+            <div class="topic-subheading-description">
+                This method involves completing the square to solve quadratic equations. For example, to solve 2x² – x –
+                1 = 0:<br>
+                <ol>
+                    <li>Move the constant term to the other side of the equation.</li>
+                    <li>Divide both sides by 2.</li>
+                    <li>Add the square of half of the coefficient of x to both sides.</li>
+                    <li>Factor the right side and solve for x.</li>
+                </ol>
+            </div>
+            <h4 class="topic-subheading">Using Quadratic Formula</h4>
+            <div class="topic-subheading-description">
+                The quadratic formula can be used to find the roots of a quadratic equation. For a quadratic equation
+                ax² + bx + c = 0:<br>
+                <strong>x = [-b ± √(b² - 4ac)] / 2a</strong><br>
+                The ± sign indicates two distinct roots.
+            </div>
+            <h4 class="topic-subheading">Taking the Square Root</h4>
+            <div class="topic-subheading-description">
+                This method is used for equations like x² + a² = 0. For example, to solve x² – 50 = 0:<br>
+                <ol>
+                    <li>Move the constant term to the other side.</li>
+                    <li>Take the square root of both sides.</li>
+                    <li>Solve for x.</li>
+                </ol>
+            </div>
+            <h3 class="topic-subheading">Conclusion</h3>
+            <div class="topic-subheading-description">
+                Quadratic equations can be solved using various methods, including factoring, completing the square,
+                using the quadratic formula, and taking the square root. The quadratic formula is a common method, but
+                other techniques can also be effective.
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Math Topics</h4>
+                <ul>
+                    <li>Algebra</li>
+                    <li>Geometry</li>
+                    <li>Calculus</li>
+                    <li>Statistics</li>
+                    <li>Number Theory</li>
+                    <li>Linear Algebra</li>
+                    <li>Trigonometry</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li>Math Tutorials</li>
+                    <li>Practice Problems</li>
+                    <li>Math Tools</li>
+                    <li>Mathematical Blog</li>
+                    <li>Online Courses</li>
+                    <li>Research Papers</li>
+                    <li>Math Challenges</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Community</h4>
+                <ul>
+                    <li>Math Forums</li>
+                    <li>Math Clubs</li>
+                    <li>Math Events</li>
+                    <li>Math Enthusiasts</li>
+                    <li>Math Competitions</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li>Math History</li>
+                    <li>Famous Mathematicians</li>
+                    <li>Math Puzzles</li>
+                    <li>Math Art</li>
+                    <li>Math in Everyday Life</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="translate">
+                <div id="google_translate_element" style="padding: 10px;"></div>
+            </div>
+            <p>© 2023 All Rights Reserved, Convertrix™</p>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-facebook" style="color: #1877f2;"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram" style="color: #e4405f;"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="/mathopedia/js/index.js"></script>
+</body>
+
+</html>
