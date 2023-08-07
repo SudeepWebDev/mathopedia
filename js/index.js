@@ -29,11 +29,11 @@ const searchBox = document.querySelector('.search-box');
 const headerHeight = document.querySelector('header').clientHeight; // Get header height
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= headerHeight) {
-        searchBox.classList.add('show-search-box');
-    } else {
-        searchBox.classList.remove('show-search-box');
-    }
+  if (window.scrollY >= headerHeight) {
+    searchBox.classList.add('show-search-box');
+  } else {
+    searchBox.classList.remove('show-search-box');
+  }
 });
 
 
@@ -95,30 +95,30 @@ class StartWithGenerator {
       ['Square Roots and Cube Roots', 'square-root-alt', 'Finding the roots of numbers'],
       ['Word Problems', 'question', 'Applying arithmetic concepts to real-life situations']
       ],
-      'Algebra': 
+      'Algebra':
         [
-          ['Variables and Constants', 'sort-alpha-down', 'Understanding variables and constants in equations', '/mathopedia/html/algebra.html?topic=variables-and-constants'],
-          ['Expressions and Equations', 'equals', 'Working with mathematical expressions and equations', '/mathopedia/html/algebra.html?topic=expressions-and-equations'],
-          ['Solving Equations', 'equals', 'Solving equations to find the value of variables', '/mathopedia/html/algebra.html?topic=solving-equations'],
-          ['Inequalities', 'not-equal', 'Working with inequality statements', '/mathopedia/html/algebra.html?topic=inequalities'],
-          ['Linear Equations', 'chart-line', 'Solving linear equations and graphing lines', '/mathopedia/html/algebra.html?topic=linear-equations'],
-          ['Quadratic Equations', 'superscript', 'Solving quadratic equations and finding their solutions', '/mathopedia/html/algebra.html?topic=quadratic-equations'],
-          ['Polynomials', 'times', 'Understanding and working with polynomial expressions', '/mathopedia/html/algebra.html?topic=polynomials'],
-          ['Factoring', 'sitemap', 'Factoring polynomials into their component terms', '/mathopedia/html/algebra.html?topic=factoring'],
-          ['Functions', 'function', 'Defining and understanding mathematical functions', '/mathopedia/html/algebra.html?topic=functions'],
-          ['Graphing Functions', 'chart-area', 'Graphing functions on coordinate planes', '/mathopedia/html/algebra.html?topic=graphing-functions'],
-          ['Exponents and Radicals', 'square-root-alt', 'Working with exponents and finding roots of numbers', '/mathopedia/html/algebra.html?topic=exponents-and-radicals'],
-          ['Rational Expressions', 'divide', 'Working with fractions involving polynomials', '/mathopedia/html/algebra.html?topic=rational-expressions'],
-          ['Complex Numbers', 'infinity', 'Understanding and performing operations with complex numbers', '/mathopedia/html/algebra.html?topic=complex-numbers'],
-          ['Quadratic Functions', 'chart-line', 'Analyzing and graphing quadratic functions', '/mathopedia/html/algebra.html?topic=quadratic-functions'],
-          ['Polynomial Functions', 'chart-bar', 'Analyzing and graphing polynomial functions', '/mathopedia/html/algebra.html?topic=polynomial-functions'],
-          ['Exponential Functions', 'chart-line', 'Analyzing and graphing exponential functions', '/mathopedia/html/algebra.html?topic=exponential-functions'],
-          ['Logarithmic Functions', 'chart-line', 'Analyzing and graphing logarithmic functions', '/mathopedia/html/algebra.html?topic=logarithmic-functions'],
-          ['Systems of Equations', 'equals', 'Solving and graphing systems of linear equations', '/mathopedia/html/algebra.html?topic=systems-of-equations'],
-          ['Matrices and Determinants', 'table', 'Working with matrices and finding determinants', '/mathopedia/html/algebra.html?topic=matrices-and-determinants'],
-          ['Sequences and Series', 'list-ol', 'Analyzing arithmetic and geometric sequences and series', '/mathopedia/html/algebra.html?topic=sequences-and-series']
-        ]        
-      
+          ['Variables and Constants', 'sort-alpha-down', 'Understanding variables and constants in equations', 'algebra.html?topic=variables-and-constants'],
+          ['Expressions and Equations', 'equals', 'Working with mathematical expressions and equations', 'algebra.html?topic=expressions-and-equations'],
+          ['Solving Equations', 'equals', 'Solving equations to find the value of variables', 'algebra.html?topic=solving-equations'],
+          ['Inequalities', 'not-equal', 'Working with inequality statements', 'algebra.html?topic=inequalities'],
+          ['Linear Equations', 'chart-line', 'Solving linear equations and graphing lines', 'algebra.html?topic=linear-equations'],
+          ['Quadratic Equations', 'superscript', 'Solving quadratic equations and finding their solutions', 'algebra.html?topic=quadratic-equations'],
+          ['Polynomials', 'times', 'Understanding and working with polynomial expressions', 'algebra.html?topic=polynomials'],
+          ['Factoring', 'sitemap', 'Factoring polynomials into their component terms', 'algebra.html?topic=factoring'],
+          ['Functions', 'function', 'Defining and understanding mathematical functions', 'algebra.html?topic=functions'],
+          ['Graphing Functions', 'chart-area', 'Graphing functions on coordinate planes', 'algebra.html?topic=graphing-functions'],
+          ['Exponents and Radicals', 'square-root-alt', 'Working with exponents and finding roots of numbers', 'algebra.html?topic=exponents-and-radicals'],
+          ['Rational Expressions', 'divide', 'Working with fractions involving polynomials', 'algebra.html?topic=rational-expressions'],
+          ['Complex Numbers', 'infinity', 'Understanding and performing operations with complex numbers', 'algebra.html?topic=complex-numbers'],
+          ['Quadratic Functions', 'chart-line', 'Analyzing and graphing quadratic functions', 'algebra.html?topic=quadratic-functions'],
+          ['Polynomial Functions', 'chart-bar', 'Analyzing and graphing polynomial functions', 'algebra.html?topic=polynomial-functions'],
+          ['Exponential Functions', 'chart-line', 'Analyzing and graphing exponential functions', 'algebra.html?topic=exponential-functions'],
+          ['Logarithmic Functions', 'chart-line', 'Analyzing and graphing logarithmic functions', 'algebra.html?topic=logarithmic-functions'],
+          ['Systems of Equations', 'equals', 'Solving and graphing systems of linear equations', 'algebra.html?topic=systems-of-equations'],
+          ['Matrices and Determinants', 'table', 'Working with matrices and finding determinants', 'algebra.html?topic=matrices-and-determinants'],
+          ['Sequences and Series', 'list-ol', 'Analyzing arithmetic and geometric sequences and series', 'algebra.html?topic=sequences-and-series']
+        ]
+
 
     };
 
@@ -128,3 +128,22 @@ class StartWithGenerator {
 
 const startWithGenerator = new StartWithGenerator('.nav', '.start-with-section');
 
+// 
+const toggleButton = document.querySelector(".content-table-header i");
+const tableOfContents = document.querySelector(".table-of-contents");
+
+let isToggled = false;
+if (toggleButton) {
+  
+  toggleButton.addEventListener("click", () => {
+    if (!isToggled) {
+  
+      tableOfContents.style.display = 'block';
+    } else {
+      tableOfContents.style.display = 'none';
+  
+    }
+  
+    isToggled = !isToggled;
+  });
+}

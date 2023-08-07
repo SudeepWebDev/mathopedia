@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+
+    .study-tags-search-section,
+    .topic-content,
+    .tools,
+    .start-with-section {
+        margin: 40px 10px;
+    }
+
+    .start-with-list {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        flex-basis: 50%; 
+        box-sizing: border-box; 
+        padding: 10px;
+    }
+}

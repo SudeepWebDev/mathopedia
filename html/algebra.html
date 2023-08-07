@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convertrix - Mathematics</title>
     <link rel="stylesheet" href="/mathopedia/css/style.css">
+    <link rel="stylesheet" href="/mathopedia/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -14,10 +15,11 @@
             new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML" async=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.14/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.14/katex.min.js"></script>
 
 </head>
 
@@ -162,182 +164,272 @@
         <section class="start-with-section">
             <h2>Start With</h2>
             <ul class="start-with-list">
-                <li><a href="/mathopedia/html/algebra.html?topic=variables-and-constants"><i class="fas fa-sort-alpha-down"></i>
+                <li><a href="algebra.html?topic=variables-and-constants"><i class="fas fa-sort-alpha-down"></i>
                         Variables and Constants</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=expressions-and-equations"><i class="fas fa-equals"></i> Expressions and
+                <li><a href="algebra.html?topic=expressions-and-equations"><i class="fas fa-equals"></i> Expressions and
                         Equations</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=solving-equations"><i class="fas fa-equals"></i> Solving Equations</a>
+                <li><a href="algebra.html?topic=solving-equations"><i class="fas fa-equals"></i> Solving Equations</a>
                 </li>
-                <li><a href="/mathopedia/html/algebra.html?topic=inequalities"><i class="fas fa-not-equal"></i> Inequalities</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=linear-equations"><i class="fas fa-chart-line"></i> Linear Equations</a>
+                <li><a href="algebra.html?topic=inequalities"><i class="fas fa-not-equal"></i> Inequalities</a></li>
+                <li><a href="algebra.html?topic=linear-equations"><i class="fas fa-chart-line"></i> Linear Equations</a>
                 </li>
-                <li><a href="/mathopedia/html/algebra.html?topic=quadratic-equations"><i class="fas fa-superscript"></i> Quadratic
+                <li><a href="algebra.html?topic=quadratic-equations"><i class="fas fa-superscript"></i> Quadratic
                         Equations</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=polynomials"><i class="fas fa-times"></i> Polynomials</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=factoring"><i class="fas fa-sitemap"></i> Factoring</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=functions"><i class="fas fa-function"></i> Functions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=graphing-functions"><i class="fas fa-chart-area"></i> Graphing
+                <li><a href="algebra.html?topic=polynomials"><i class="fas fa-times"></i> Polynomials</a></li>
+                <li><a href="algebra.html?topic=factoring"><i class="fas fa-sitemap"></i> Factoring</a></li>
+                <li><a href="algebra.html?topic=functions"><i class="fas fa-function"></i> Functions</a></li>
+                <li><a href="algebra.html?topic=graphing-functions"><i class="fas fa-chart-area"></i> Graphing
                         Functions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=exponents-and-radicals"><i class="fas fa-square-root-alt"></i> Exponents
+                <li><a href="algebra.html?topic=exponents-and-radicals"><i class="fas fa-square-root-alt"></i> Exponents
                         and Radicals</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=rational-expressions"><i class="fas fa-divide"></i> Rational
+                <li><a href="algebra.html?topic=rational-expressions"><i class="fas fa-divide"></i> Rational
                         Expressions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=complex-numbers"><i class="fas fa-infinity"></i> Complex Numbers</a>
+                <li><a href="algebra.html?topic=complex-numbers"><i class="fas fa-infinity"></i> Complex Numbers</a>
                 </li>
-                <li><a href="/mathopedia/html/algebra.html?topic=quadratic-functions"><i class="fas fa-chart-line"></i> Quadratic
+                <li><a href="algebra.html?topic=quadratic-functions"><i class="fas fa-chart-line"></i> Quadratic
                         Functions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=polynomial-functions"><i class="fas fa-chart-bar"></i> Polynomial
+                <li><a href="algebra.html?topic=polynomial-functions"><i class="fas fa-chart-bar"></i> Polynomial
                         Functions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=exponential-functions"><i class="fas fa-chart-line"></i> Exponential
+                <li><a href="algebra.html?topic=exponential-functions"><i class="fas fa-chart-line"></i> Exponential
                         Functions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=logarithmic-functions"><i class="fas fa-chart-line"></i> Logarithmic
+                <li><a href="algebra.html?topic=logarithmic-functions"><i class="fas fa-chart-line"></i> Logarithmic
                         Functions</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=systems-of-equations"><i class="fas fa-equals"></i> Systems of
+                <li><a href="algebra.html?topic=systems-of-equations"><i class="fas fa-equals"></i> Systems of
                         Equations</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=matrices-and-determinants"><i class="fas fa-table"></i> Matrices and
+                <li><a href="algebra.html?topic=matrices-and-determinants"><i class="fas fa-table"></i> Matrices and
                         Determinants</a></li>
-                <li><a href="/mathopedia/html/algebra.html?topic=sequences-and-series"><i class="fas fa-list-ol"></i> Sequences and
+                <li><a href="algebra.html?topic=sequences-and-series"><i class="fas fa-list-ol"></i> Sequences and
                         Series</a></li>
             </ul>
         </section>
 
-        <section class="topic-content">
+        <section class="topic-content" id="quadratic-equations">
+
             <h2 class="topic-title">Quadratic Equations</h2>
+            <div class="content-table">
+                <div class="content-table-header">
+                    <h3>Table of contents</h3>
+                    <i class="fas fa-list-ol"></i>
+                </div>
+                <div class="table-of-contents">
+                    <ol>
+                        <li><a href="#quadratic-equations">Quadratic Equations -- overview</a></li>
+                        <li><a href="#what-is-quadratic-equations">What is quadratic equations?</a></li>
+                        <li><a href="#standard-form-of-quadratic-equation">Standard Form of Quadratic Equation</a></li>
+                        <li><a href="#quadratics-formula">Quadratics Formula</a></li>
+                        <li><a href="#examples-of-quadratics">Examples of Quadratics</a></li>
+                        <li><a href="#how-to-solve-quadratic-equations">How to Solve Quadratic Equations?</a></li>
+                        <li><a href="#factoring-of-quadratics">Factoring of Quadratics</a></li>
+                        <li><a href="#completing-the-square-method">Completing the Square Method</a></li>
+                        <li><a href="#using-quadratic-formula">Using Quadratic Formula</a></li>
+                        <li><a href="#taking-the-square-root">Taking the Square Root</a></li>
+                    </ol>
+                </div>
+            </div>
+
+
             <p class="topic-description">
                 Quadratics can be defined as a polynomial equation of a second degree, which implies that it comprises a
                 minimum of one term that is squared. It is also called quadratic equations. The general form of the
-                quadratic equation is:<br>
-                <strong>ax² + bx + c = 0</strong><br>
-                where x is an unknown variable and a, b, and c are numerical coefficients. For example, x² + 2x + 1 is a
-                quadratic equation. Here, 'a' must not be equal to zero; otherwise, the equation becomes linear, such
-                as:<br>
-                <strong>bx + c = 0</strong><br>
-                Thus, this equation cannot be considered a quadratic equation.<br>
-                The terms a, b, and c are also referred to as quadratic coefficients.<br>
-                The solutions to the quadratic equation are the values of the unknown variable x, which satisfy the
-                equation. These solutions are called roots or zeros of quadratic equations. The roots of any polynomial
-                are the solutions to the given equation.
+                quadratic equation is:
+                <br><br>
+                <strong>\(ax^2 + bx + c = 0\)</strong>
+                <br><br>
+                where \(x\) is an unknown variable and \(a, b, c\) are numerical coefficients.<br><br> For example,
+                \(x^2 + 2x + 1\) is a quadratic or quadratic equation. Here, \(a \neq 0\) because if it equals zero then
+                the equation will not remain quadratic anymore and it will become a linear equation, such as:
+                <br><br>
+                <strong>\(bx + c = 0\)</strong>
+                <br><br>
+                Thus, this equation cannot be called a quadratic equation.
+                <br><br>
+                The terms \(a, b\) and \(c\) are also called quadratic coefficients.
             </p>
+
             <h3 class="topic-subheading">What is Quadratic Equation?</h3>
-            <div class="topic-subheading-description">
+            <p class="topic-subheading-description">
                 The polynomial equation whose highest degree is two is called a quadratic equation or sometimes just
-                quadratics. It is expressed in the form of:<br>
-                <strong>ax² + bx + c = 0</strong><br>
-                where x is the unknown variable and a, b, and c are constant terms.
-            </div>
-            <h3 class="topic-subheading">Standard Form of Quadratic Equation</h3>
-            <div class="topic-subheading-description">
-                Since the quadratic equation includes only one unknown term or variable, it is called univariate. The
-                power of variable x is always a non-negative integer. Hence, the equation is a polynomial equation with
-                the highest power of 2.<br>
-                The solutions for this equation are the values of x, also known as zeros. Zeros of the polynomial
-                satisfy the equation. In the case of quadratics, there are two roots or zeros of the equation. When the
-                values of roots or x are placed on the left-hand side of the equation, it equals zero. Therefore, they
-                are called zeros.
-            </div>
-            <h3 class="topic-subheading">Quadratic Formula</h3>
-            <div class="topic-subheading-description">
-                The formula for solving a quadratic equation is used to find the roots of the equation. Since quadratics
-                have a degree equal to two, there are typically two solutions for the equation. For a quadratic equation
-                <strong>ax² + bx + c = 0</strong>, the formula to find the roots is:<br>
-                <strong>
-                    \ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\
-                </strong><br>
-                The ± sign indicates two distinct solutions for x. Learn more about the quadratic formula here.
-            </div>
+                quadratics. It is expressed in the form of:
+                <br><br>
+                <strong>\(ax^2 + bx + c = 0\)</strong>
+                <br><br>
+                where \(x\) is the unknown variable and \(a, b\) and \(c\) are the constant terms.
+            </p>
+            <p class="topic-description">
+                Quadratics can be defined as a polynomial equation of a second degree, which implies that it comprises a
+                minimum of one term that is squared. It is also called quadratic equations. The general form of the
+                quadratic equation is:
+                <br><br>
+                <strong>\(ax^2 + bx + c = 0\)</strong>
+                <br><br>
+            </p>
+
+            <h3 class="topic-subheading">Quadratics Formula</h3>
+            <p class="topic-subheading-description">
+                The formula for a quadratic equation is used to find the roots of the equation. Since quadratics have a
+                degree equal to two, therefore there will be two solutions for the equation. Suppose \(ax² + bx + c =
+                0\) is
+                the quadratic equation, then the formula to find the roots of this equation will be:
+                <br><br>
+                <strong>\(x = \frac{-b\ \pm \ \sqrt{b² - 4ac}}{2a}\)</strong>
+
+
+                <br><br>
+                The sign of plus/minus indicates there will be two solutions for \(x\).
+            </p>
+
             <h3 class="topic-subheading">Examples of Quadratics</h3>
-            <div class="topic-subheading-description">
-                Beneath are the illustrations of quadratic equations of the form <strong>ax² + bx + c = 0</strong>:<br>
-                <ul>
-                    <li>x² – x – 9 = 0</li>
-                    <li>5x² – 2x – 6 = 0</li>
-                    <li>3x² + 4x + 8 = 0</li>
-                    <li>-x² + 6x + 12 = 0</li>
-                </ul>
-                Examples of a quadratic equation with the absence of a 'C' - a constant term:<br>
-                <ul>
-                    <li>-x² – 9x = 0</li>
-                    <li>x² + 2x = 0</li>
-                    <li>-6x² – 3x = 0</li>
-                    <li>-5x² + x = 0</li>
-                    <li>-12x² + 13x = 0</li>
-                    <li>11x² – 27x = 0</li>
-                </ul>
-                Following are the examples of a quadratic equation in factored form:<br>
-                <ul>
-                    <li>(x – 6)(x + 1) = 0 [Result obtained after solving is x² – 5x – 6 = 0]</li>
-                    <li>–3(x – 4)(2x + 3) = 0 [Result obtained after solving is -6x² + 15x + 36 = 0]</li>
-                    <li>(x − 5)(x + 3) = 0 [Result obtained after solving is x² − 2x − 15 = 0]</li>
-                    <li>(x – 5)(x + 2) = 0 [Result obtained after solving is x² – 3x – 10 = 0]</li>
-                    <li>(x – 4)(x + 2) = 0 [Result obtained after solving is x² – 2x – 8 = 0]</li>
-                    <li>(2x + 3)(3x – 2) = 0 [Result obtained after solving is 6x² + 5x – 6]</li>
-                </ul>
-                Below are examples of a quadratic equation with an absence of linear coefficient 'bx':<br>
-                <ul>
-                    <li>2x² – 64 = 0</li>
-                    <li>x² – 16 = 0</li>
-                    <li>9x² + 49 = 0</li>
-                    <li>-2x² – 4 = 0</li>
-                    <li>4x² + 81 = 0</li>
-                    <li>-x² – 9 = 0</li>
-                </ul>
-            </div>
+            <p class="topic-subheading-description">
+                Following are the illustrations of quadratic equations of the form (ax² + bx + c = 0):
+            <ul class="subheading-ul">
+                <li>\(x^2 + x – 9 = 0\)</li>
+                <li>\(6x^2 – 2x – 6 = 9\)</li>
+                <li>\(8x^2 + 4x + 8 = 0\)</li>
+                <li>\(-x^2 + 5x + 12 = 0\)</li>
+            </ul>
+            Examples of a quadratic equation with the absence of a ‘C’- a constant term:
+            <ul class="subheading-ul">
+                <li>\(-x^2 – 9x = 0\)</li>
+                <li>\(x^2 + 2x = 0\)</li>
+                <li>\(-6x^2 – 3x = 0\)</li>
+                <li>\(-5x^2 + x = 0\)</li>
+                <li>\(-12x^2 + 13x = 0\)</li>
+                <li>\(11x^2 – 27x = 0\)</li>
+            </ul>
+            Following are the examples of a quadratic equation in factored form:
+            <ul class="subheading-ul">
+                <li>\((x – 6)(x + 1) = 0\)</li>
+                <li>\(-3(x – 4)(2x + 3) = 0\)</li>
+                <li>\((x − 5)(x + 3) = 0\)</li>
+                <li>\((x – 5)(x + 2) = 0\)</li>
+                <li>\((x – 4)(x + 2) = 0\)</li>
+                <li>\((2x + 3)(3x – 2) = 0\)</li>
+            </ul>
+            Below are the examples of a quadratic equation with an absence of linear co – efficient ‘bx’:
+            <ul class="subheading-ul">
+                <li>\(2x^2 – 64 = 0\)</li>
+                <li>\(x^2 – 16 = 0\)</li>
+                <li>\(9x^2 + 49 = 0\)</li>
+                <li>\(-2x^2 – 4 = 0\)</li>
+                <li>\(4x^2 + 81 = 0\)</li>
+                <li>\(-x^2 – 9 = 0\)</li>
+            </ul>
+            </p>
+
             <h3 class="topic-subheading">How to Solve Quadratic Equations?</h3>
-            <div class="topic-subheading-description">
-                There are basically four methods of solving quadratic equations. They are:<br>
-                <ul>
-                    <li>Factoring</li>
-                    <li>Completing the square</li>
-                    <li>Using Quadratic Formula</li>
-                    <li>Taking the square root</li>
-                </ul>
-            </div>
-            <h4 class="topic-subheading">Factoring of Quadratics</h4>
-            <div class="topic-subheading-description">
-                To factor a quadratic equation of the form ax² + bx + c = 0:<br>
-                <ol>
-                    <li>Ensure that the equation is set to zero.</li>
-                    <li>Factor the left-hand side of the equation, assuming zero on the right-hand side.</li>
-                    <li>Assign each factor equal to zero.</li>
-                    <li>Solve the equation to determine the values of x.</li>
-                </ol>
-                If the leading coefficient 'a' is not equal to one, a specific method is followed for arranging the
-                factors.
-            </div>
-            <h4 class="topic-subheading">Completing the Square Method</h4>
-            <div class="topic-subheading-description">
-                This method involves completing the square to solve quadratic equations. For example, to solve 2x² – x –
-                1 = 0:<br>
-                <ol>
-                    <li>Move the constant term to the other side of the equation.</li>
-                    <li>Divide both sides by 2.</li>
-                    <li>Add the square of half of the coefficient of x to both sides.</li>
-                    <li>Factor the right side and solve for x.</li>
-                </ol>
-            </div>
-            <h4 class="topic-subheading">Using Quadratic Formula</h4>
-            <div class="topic-subheading-description">
-                The quadratic formula can be used to find the roots of a quadratic equation. For a quadratic equation
-                ax² + bx + c = 0:<br>
-                <strong>x = [-b ± √(b² - 4ac)] / 2a</strong><br>
-                The ± sign indicates two distinct roots.
-            </div>
-            <h4 class="topic-subheading">Taking the Square Root</h4>
-            <div class="topic-subheading-description">
-                This method is used for equations like x² + a² = 0. For example, to solve x² – 50 = 0:<br>
-                <ol>
-                    <li>Move the constant term to the other side.</li>
-                    <li>Take the square root of both sides.</li>
-                    <li>Solve for x.</li>
-                </ol>
-            </div>
-            <h3 class="topic-subheading">Conclusion</h3>
-            <div class="topic-subheading-description">
-                Quadratic equations can be solved using various methods, including factoring, completing the square,
-                using the quadratic formula, and taking the square root. The quadratic formula is a common method, but
-                other techniques can also be effective.
-            </div>
+            <p class="topic-subheading-description">
+                There are basically four methods of solving quadratic equations. They are:
+            <ul class="subheading-ul">
+                <li>Factoring</li>
+                <li>Completing the square</li>
+                <li>Using Quadratic Formula</li>
+                <li>Taking the square root</li>
+            </ul>
+            </p>
+            <h3 class="topic-subheading">Factoring of Quadratics</h3>
+            <p class="topic-subheading-description">
+                To factorize a quadratic equation, follow these steps:
+                <br><br>
+                Begin with an equation of the form \(ax^2 + bx + c = 0\).<br>
+                Ensure that it is set to zero.<br>
+                Factor the left-hand side of the equation by assuming zero on the right-hand side of the equation.<br>
+                Assign each factor equal to zero.<br>
+                Now solve the equation to determine the values of \(x\).<br>
+                If the leading coefficient (\(a\)) is not equal to one, follow a specific method for factoring.
+                <br><br>
+                Example:
+                <br><br>
+                \(2x^2 - x - 6 = 0\)
+                <br>
+                \((2x + 3)(x - 2) = 0\)
+                <br>
+                \(2x + 3 = 0\)
+                <br>
+                \(x = -\frac{3}{2}\)
+                <br>
+                \(x = 2\)
+                <br><br>
+            </p>
+
+            <h3 class="topic-subheading">Completing the Square Method</h3>
+            <p class="topic-subheading-description">
+                Let's learn the Completing the Square method with an example.
+                <br><br>
+                <strong>Example:</strong> Solve \(2x^2 - x - 1 = 0\).
+                <br>
+                First, move the constant term to the other side of the equation.
+                <br>
+                \(2x^2 - x = 1\)
+                <br>
+                Dividing both sides by 2.
+                <br>
+                \(x^2 - \frac{x}{2} = \frac{1}{2}\)
+                <br>
+                Add the square of half of the coefficient of \(x\), \(\left(\frac{b}{2a}\right)^2\), on both sides,
+                i.e., \(\frac{1}{16}\)
+                <br>
+                \(x^2 - \frac{x}{2} + \frac{1}{16} = \frac{1}{2} + \frac{1}{16}\)
+                <br>
+                Now we can factor the right side,
+                <br>
+                \((x - \frac{1}{4})^2 = \frac{9}{16} = \left(\frac{3}{4}\right)^2\)
+                <br>
+                Taking the square root of both sides;
+                <br>
+                \(x - \frac{1}{4} = \pm\frac{3}{4}\)
+                <br>
+                Add \(\frac{1}{4}\) on both sides
+                <br>
+                \(x = \frac{1}{4} \pm \frac{3}{4}\)
+                <br>
+                Therefore,
+                <br>
+                \(x = \frac{1}{4} + \frac{3}{4} = \frac{4}{4} = 1\)
+                <br>
+                \(x = \frac{1}{4} - \frac{3}{4} = -\frac{2}{4} = -\frac{1}{2}\)
+                <br><br>
+            </p>
+
+            <h3 class="topic-subheading">Using Quadratic Formula</h3>
+            <p class="topic-subheading-description">
+                For the given Quadratic equation of the form, \(ax^2 + bx + c = 0\)
+                <br><br>
+                Therefore the roots of the given equation can be found by:
+                <br><br>
+                \(\frac{-b \pm \sqrt{b^2-4ac}}{2a}\)
+                <br><br>
+                where \(\pm\) (one plus and one minus) represent two distinct roots of the given equation.
+            </p>
+            <h3 class="topic-subheading">Taking the Square Root</h3>
+            <p class="topic-subheading-description">
+                We can use this method for the equations such as:
+                <br><br>
+                \(x^2 + a^2 = 0\)
+                <br><br>
+                Example: Solve \(x^2 - 50 = 0\).
+                <br>
+                \(x^2 - 50 = 0\)
+                <br>
+                \(x^2 = 50\)
+                <br>
+                Taking the square root of both sides
+                <br>
+                \(\sqrt{x^2} = \pm\sqrt{50}\)
+                <br>
+                \(x = \pm\sqrt{2 \times 5 \times 5}\)
+                <br>
+                \(x = \pm5\sqrt{2}\)
+                <br><br>
+                Thus, we got the required solution.
+            </p>
+
         </section>
+        <section class="tools">
+            <h2>Quadratic Equation Solver</h2>
+            <div id="solver-content"></div>
+        </section>
+
+
 
 
 
@@ -408,6 +500,7 @@
     </footer>
 
     <script src="/mathopedia/js/index.js"></script>
+    <script src="/mathopedia/js/tools.js"></script>
 </body>
 
 </html>
