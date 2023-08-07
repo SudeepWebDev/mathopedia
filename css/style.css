@@ -328,6 +328,29 @@ header .header-actions {
 .solutions p {
   font-size: 16px;
 }
+/* user rating */
+.user-rating {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.star {
+  color: rgb(224, 224, 224); 
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.star:hover,
+.star:hover ~ .star{
+  color: gold; 
+  background: linear-gradient(to bottom right, var(--vibrant-orange), var(--warm-yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 
 
 /* suprises slideshow section */

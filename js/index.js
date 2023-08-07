@@ -147,3 +147,21 @@ if (toggleButton) {
     isToggled = !isToggled;
   });
 }
+
+// printing the section
+const printBtn = document.getElementById('print-button')
+if (printBtn) {
+
+  printBtn.addEventListener('click', function toPDF() {
+    html2pdf()
+      .set({
+        margin: 1,
+        filename: "convertrix.pdf",
+        image: { type: "jpeg", quality: 1 },
+        enableLinks: true,
+        jsPDF: { format: "A4", orientation: "portrait" }
+      })
+      .from(document.querySelector(".topic-content"))
+      .save();
+  })
+}
