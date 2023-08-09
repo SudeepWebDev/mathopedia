@@ -73,7 +73,7 @@ class StartWithGenerator {
 
   getTopicsForSection(sectionName) {
     const topicsMap = {
-      'For You': ['Topic 1', 'Topic 2', 'Topic 3'],
+      'For You': [['Quadratic Equations', 'superscript', 'Solving quadratic equations and finding their solutions', '/mathopedia/html/algebra.html?topic=quadratic-equations'], ['Quadratic Equations', 'superscript', 'Solving quadratic equations and finding their solutions', '/mathopedia/html/algebra.html?topic=quadratic-equations'], ['Quadratic Equations', 'superscript', 'Solving quadratic equations and finding their solutions', '/mathopedia/html/algebra.html?topic=quadratic-equations']],
       'Arithmetic': [['Addition', 'plus', 'Combining two or more numbers to find their sum'],
       ['Subtraction', 'minus', 'Finding the difference between two numbers'],
       ['Multiplication', 'times', 'Repeated addition of a number or finding the product of two numbers'],
@@ -134,19 +134,20 @@ const tableOfContents = document.querySelector(".table-of-contents");
 
 let isToggled = false;
 if (toggleButton) {
-  
+
   toggleButton.addEventListener("click", () => {
     if (!isToggled) {
-  
+
       tableOfContents.style.display = 'block';
     } else {
       tableOfContents.style.display = 'none';
-  
+
     }
-  
+
     isToggled = !isToggled;
   });
 }
+
 
 // printing the section
 const printBtn = document.getElementById('print-button')
@@ -165,3 +166,46 @@ if (printBtn) {
       .save();
   })
 }
+
+
+
+
+const search_appearance = document.querySelector('.search-appearance');
+const search_bar = document.querySelector('.search-bar');
+const input_search_loader = document.querySelector('.input-search-loader');
+search_bar.style.borderRadius = '5px';
+
+search_bar.addEventListener('click', function (event) {
+  event.stopPropagation();
+  input_search_loader.style.display = 'block';
+  input_search_loader.style.position = 'absolute';
+  input_search_loader.style.zIndex = '2';
+  input_search_loader.style.width = search_bar.offsetWidth + 'px';
+  input_search_loader.style.left = '50%';
+  input_search_loader.style.transform = 'translateX(-50%)';
+  search_bar.style.borderRadius = '5px 5px 0px 0px';
+});
+
+window.addEventListener('resize', function () {
+  if (input_search_loader.style.display === 'block') {
+    input_search_loader.style.width = search_bar.offsetWidth + 'px';
+  }
+});
+
+
+document.body.addEventListener('click', function (event) {
+  const searchBarWidth = search_bar.offsetWidth;
+  const searchBarLeft = search_bar.getBoundingClientRect().left;
+  const clickedX = event.clientX;
+
+  if (
+    clickedX < searchBarLeft ||
+    clickedX > (searchBarLeft + searchBarWidth) ||
+    !search_appearance.contains(event.target) &&
+    event.target !== input_search_loader
+  ) {
+    search_bar.style.borderRadius = '5px';
+    input_search_loader.style.display = 'none';
+  }
+});
+

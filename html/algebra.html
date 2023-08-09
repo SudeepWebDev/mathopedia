@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/mathopedia/css/style.css">
     <link rel="stylesheet" href="/mathopedia/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
@@ -45,7 +46,20 @@
             <div class="study-text">
                 <h1>What will you study today?</h1>
             </div>
-            <div><input type="text" class="search-bar" placeholder="Search"></div>
+            <div class="search-appearance">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="input-search-loader">
+                    <div class="input-search-loader-topics-tools">
+                        <div>Topics</div>
+                        <div>Tools</div>
+                    </div>
+                    <div class="recent-search">Recent Searches will be shown here!</div>
+                </div>
+            </div>
             <div class="tag-icons">
                 <ul class="nav">
                     <li>
@@ -161,7 +175,7 @@
             </div>
         </div>
 
-        <section class="start-with-section">
+        <section class="start-with-section ">
             <h2>Start With</h2>
             <ul class="start-with-list">
                 <li><a href="algebra.html?topic=variables-and-constants"><i class="fas fa-sort-alpha-down"></i>
@@ -204,7 +218,6 @@
         </section>
 
         <section class="topic-content" id="quadratic-equations">
-
             <h2 class="topic-title" style="display: flex; justify-content: space-between; align-items: center;">
                 <div>Quadratic Equations</div>
                 <div style="cursor: pointer;" id="print-button"><i class="fas fa-print"></i><i
@@ -231,8 +244,6 @@
                     </ol>
                 </div>
             </div>
-
-
             <p class="topic-description">
                 Quadratics can be defined as a polynomial equation of a second degree, which implies that it comprises a
                 minimum of one term that is squared. It is also called quadratic equations. The general form of the
@@ -426,13 +437,14 @@
                 \(x = \pm5\sqrt{2}\)
                 <br><br>
                 Thus, we got the required solution.
-            </p>
+            </p> 
             <div class="user-rating">
                 <span class="star">&#9733;</span>
                 <span class="star">&#9733;</span>
                 <span class="star">&#9733;</span>
                 <span class="star">&#9733;</span>
                 <span class="star">&#9733;</span>
+
             </div>
         </section>
         <section class="tools">
