@@ -18,6 +18,9 @@
     h2 {
         font-size: 18px;
     }
+    .search-bar {
+        width: 80%;
+    }
 
     .footer-links {
         flex-wrap: wrap;
